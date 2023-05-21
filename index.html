@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assetes/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>ByeCar</title>
+</head>
+<body>
+    <header>
+        <img src="assetes/images/dnc-logo.png" alt="" id="logo">
+        <div class="title"><h1>ByeCar</h1></div>
+    </header>
+
+    <section id="conteudo">
+        <div class="left-contentt">
+            <h2>Ter <b>uma moto</b> por assinatura nunca foi tão fácil!</h2>
+            <img src="assetes/images/MulherMoto.png" alt="" id="mulher-Moto">
+        </div>
+        
+        <div class="right-content">
+            <h2 class="title">Conheça nossas <span>motos</span>!</h2>
+            <div class="carousel">
+                <button>
+                    <img src="assetes/images/left-arrow.png" alt="left-arrow" id="left-arrow" onclick="esquerda()">
+                </button>
+                <ul class="carousel-cards">
+                    <li class="card1 active" id="card1">
+                        <h2>Scooter Elétrica Voltz EV1</h2>
+                        <img src="assetes/images/img-card-1.png" alt="">
+                        <div class="card-label">
+                            <h1>A partir de</h1>
+                            <span>R$ 619,90</span>
+                            <h3>Plano de 30 meses</h3>
+                        </div>
+                    </li>
+                    <li class="card2" id="card2">
+                        <h2>Honda CB 500X</h2>
+                        <img src="assetes/images/img-card-2.png" alt="">
+                        <div class="card-label">
+                            <h1>A partir de</h1>
+                            <span>R$ 619,90</span>
+                            <h3>Plano de 30 meses</h3>
+                        </div>
+                    </li>
+                </ul>
+                <button>
+                    <img src="assetes/images/right-arrow.png" alt="right-arrow" id="right-arrow" onclick="direita()">
+                </button>
+            </div>
+            <button class="open-modal" id="open-modal" onclick="openModal()">Saiba Mais</button>
+        </div>  
+    </section>
+    <section class="modal" id="modal">
+            <ul>
+                <li class="modal-content" id="mdl1">
+                    <div class="close" id="close" onclick="closeModal()"><img src="assetes/images/close.png" alt=""></div>
+                    <h1>Honda CB 500X</h1>
+                    <p>O câmbio de 6 marchas da CB 500X oferece maior confiança e performance na pilotagem, tornando as subidas de marcha mais leves e as reduções mais suaves!</p>
+                    <img src="assetes/images/img-card-1.png" alt="">
+                    <button type="submit">Quero Assinar!</button>
+                </li>
+                <li class="modal-content" id="mdl2">
+                    <div class="close" id="close" onclick="closeModal()"><img src="assetes/images/close.png" alt=""></div>
+                    <h1>Scooter Elétrica Voltz EV1</h1>
+                    <p>O câmbio de 6 marchas da CB 500X oferece maior confiança e performance na pilotagem, tornando as subidas de marcha mais leves e as reduções mais suaves!</p>
+                    <img src="assetes/images/img-card-2.png" alt="">
+                    <button type="submit">Quero Assinar!</button>
+                </li>
+            </ul>
+    </section>
+
+    <script src="assetes/js/script.js"></script>
+</body>
+</html>

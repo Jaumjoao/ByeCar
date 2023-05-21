@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: #303030;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+header h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFF;
+    margin-left: 30px;
+}
+header img{
+    width: 157px;
+    height: 115px;
+}
+
+
+
+section{
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    position: relative;
+    z-index: 1;
+}
+.left-contentt{
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+.left-contentt h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    max-width: 550px;
+    text-align: center;
+    color: #265E70;
+    margin-top: 20px;
+    position: absolute;
+}
+#mulher-Moto{
+    width: 500px;
+    margin-top: 70px;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-content .title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #265E70;
+    margin: 20px 0 20px 0;
+}
+.right-content span{
+    color: #4DBCE9;
+    font-weight: 700;
+}
+.carousel{
+    display: flex;
+    align-items: center;
+}
+.carousel-cards {
+    display: flex;
+    overflow: hidden;
+    gap: 2rem;
+    padding: 0px 10px;
+}
+.carousel-cards li{
+    width: 520px;
+    height: 415px;
+    background: rgba(77, 188, 233, 0.75);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.carousel-cards .card1 img{
+    width: 250px;
+}
+.carousel-cards .card1{
+    opacity: 1;
+}
+.carousel-cards .card2{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.card-label{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.carousel-cards h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: #FFF;
+}
+.carousel-cards h1, .carousel-cards h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    margin: 10px 0 10px 0;
+}
+.carousel-cards h1{
+    margin-top: 0;
+}
+
+.carousel-cards span{
+    background-color: #FFF;
+    color: #265E70;
+    border-radius: 15px;
+    font-weight: 700;
+    padding: 0.5rem 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.carousel button{
+    border: none;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.saibaMais{
+    width: 280px;
+    height: 60px;
+    border: none;
+    background-color: #4DBCE9;
+    color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+
+#left-arrow{
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+#right-arrow{
+    padding: 10px;
+}
+#right-arrow:hover{
+    transform: translateX(10px);
+    transition-duration: 0.5s;
+}
+
+
+.open-modal{
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 15px;
+    background-color: #4DBCE9;
+    color: #FFF;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.open-modal:hover{
+    transition-duration: 0.5s;
+    background-color: #265E70;
+    box-shadow: #173944 0px 0px 20px;
+}
+
+.modal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 9999;
+    top: 12%;
+    left: 0;
+
+}
+.modal-content{
+    background-color: #4DBCE9;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 830px;
+    min-height: 585px;
+    border-radius: 15px;
+}
+#mdl1, #mdl2{
+    display: none;
+    opacity: 0;
+}
+.modal-content h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFF;
+    font-size: 33px;
+    margin: 20px 0px 20px 0px;
+    position: absolute;
+}
+.modal-content p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+    max-width: 650px;
+}
+.modal-content button{
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 20px 50px 20px 50px;
+    border-radius: 15px;
+    background-color: #FFF;
+    color: #265E70;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.modal-content button:hover{
+    transition-duration: 0.5s;
+    background-color: #4DBCE9;
+    box-shadow: #173944 0px 0px 20px;  
+    color: #FFF; 
+}
+.close{
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    cursor: pointer;
+}
